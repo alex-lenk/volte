@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Main-menu/320" transform="translate(-183.000000, -13.000000)" fill="#00B956" fill-rule="nonzero">
+            <g id="search" transform="translate(183.000000, 13.000000)">
+                <path d="M16.875,9.749875 C16.875,5.81465975 13.6852153,2.624875 9.75,2.624875 C5.81478475,2.624875 2.625,5.81465975 2.625,9.749875 C2.625,13.6850903 5.81478475,16.874875 9.75,16.874875 C13.6852153,16.874875 16.875,13.6850903 16.875,9.749875 Z M18.875,9.749875 C18.875,14.7896597 14.7897847,18.874875 9.75,18.874875 C4.71021525,18.874875 0.625,14.7896597 0.625,9.749875 C0.625,4.71009025 4.71021525,0.624875 9.75,0.624875 C14.7897847,0.624875 18.875,4.71009025 18.875,9.749875 Z" id="Stroke-1"></path>
+                <polygon id="Stroke-3" points="18.6333765 19.7404708 15.3033765 15.6829708 13.7573735 16.9517792 17.0873735 21.0092792"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

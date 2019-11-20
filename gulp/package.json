@@ -1,0 +1,20 @@
+{
+  "name": "AlexLenk",
+  "version": "1.0.2",
+  "description": "for html+css+js files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-lenk"
+  },
+  "author": "AlexLenk.ru",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint --config config/eslint.config.js --fix src/scripts/*.js "
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-path": "^3.*",
+    "gulp-svgmin": "^1.*",
+    "gulp-svgstore": "^6.*"
+  }
+}
