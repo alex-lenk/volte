@@ -15,6 +15,10 @@ body {
   }
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1240px;
@@ -22,4 +26,10 @@ body {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }

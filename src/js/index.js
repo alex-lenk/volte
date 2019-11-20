@@ -1,1 +1,1 @@
-import svgxuse from "vendor/svgxuse.min";
+//import svgxuse from "vendor/svgxuse.min";
