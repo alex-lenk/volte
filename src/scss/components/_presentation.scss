@@ -1,0 +1,31 @@
+.presentation {
+  position: relative;
+}
+
+.presentation-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.presentation-title {
+  margin-bottom: 30px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.presentation-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+}

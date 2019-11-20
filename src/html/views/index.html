@@ -4,6 +4,25 @@
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container">Первая страница.</div>
+<section class="presentation">
+  <picture>
+    <source srcset="/img/presentation-640.jpg" media="(max-width: 640px)">
+    <source srcset="/img/presentation-1280.jpg" media="(max-width: 1280px)">
+    <img src="/img/presentation-2560.jpg" alt="">
+  </picture>
+  <div class="presentation-inner">
+    <div class="presentation-container container">
+        <h1 class="presentation-title">
+          Кристально <br>
+          чистый звук <br>
+          с&nbsp;технологией VoLTE
+        </h1>
+
+        <div class="presentation-subtitle">
+          Переходи на новый уровень общения
+        </div>
+    </div>
+  </div>
+</section>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
