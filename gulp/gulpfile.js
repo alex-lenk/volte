@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 gulp.task('svgIcons', function () {
     return gulp
-        .src('./icons/*.svg')
+        .src('../src/img/icons/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = basePath.basename(file.relative, basePath.extname(file.relative));
             return {
@@ -20,5 +20,5 @@ gulp.task('svgIcons', function () {
             }
         }))
         .pipe(svgstore())
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('../src/img/'));
 });
