@@ -3,7 +3,7 @@
 
 
 /* BEGIN TABs https://codepen.io/kris-iris/pen/ZqBEPv?editors=1010 */
-const TabItemSelector = '.pageNav__tabItem';
+/*const TabItemSelector = '.pageNav__tabItem';
 const ContentItemSelector = '.pageNav__contentItem';
 
 class TabsManager {
@@ -61,30 +61,44 @@ class TabItem {
 
 document.addEventListener('DOMContentLoaded', () => {
     let tabs = new TabsManager(document.querySelector('.tabs'));
-});
+});*/
 /* END TABs  */
 
 
-
 /* BEGIN dropdown */
-window.onclick = function (event) {
-    if (!event.target.matches('.dropdown-toggle')) {
-        let dropdownMenu = document.getElementsByClassName('dropdown-menu');
 
-        for (let i = 0; i < dropdownMenu.length; i++) {
-            let openDropdown = dropdownMenu[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+document.addEventListener('click', (e) => {
+
+    if (!e.target.matches('.dropdown-toggle')) {
+        let dropdown = document.querySelectorAll('.dropdown');
+
+        dropdown.forEach((menu) => {
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
             }
-        }
+        });
     }
-};
+});
+
 
 const dropdownToggle = document.querySelectorAll('.dropdown-toggle');
 
-dropdownToggle.forEach(function (item) {
-    item.onclick = function () {
-        this.nextElementSibling.classList.toggle('show')
-    };
+dropdownToggle.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        e.target.parentElement.classList.toggle('show')
+    });
 });
+
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+dropdownItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        let self = e.target;
+        let toggle = self.parentNode.parentNode.querySelector('.dropdown-toggle');
+        const toggleText = toggle.innerText;
+        toggle.innerText = self.innerText;
+        self.innerText = toggleText;
+    });
+});
+
 /* END dropdown */

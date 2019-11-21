@@ -1,5 +1,47 @@
 .header {
-  height: 105px;
   display: flex;
   align-items: center;
+}
+
+.header-bar__point:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.header-bar__search {
+  width: 21px;
+  height: 21px;
+}
+
+.header-bar__account {
+  width: 23px;
+  height: 23px;
+}
+
+.header-bar__hamburger {
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 52px;
+  }
+  .header-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 48px;
+  }
+  .header-logo img {
+    width: 24px;
+    height: 24px
+  }
+  .header-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
 }

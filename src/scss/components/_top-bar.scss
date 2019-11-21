@@ -1,14 +1,11 @@
 .top-bar {
   color: #fff;
   background-color: #333;
+  font-size: 12px;
 }
 
 .top-bar__inner {
-  height: 50px;
+  height: 28px;
   display: flex;
   align-items: center;
-}
-
-.top-bar__geo {
-  margin-left: auto;
 }

@@ -21,26 +21,54 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-bar__inner container">
-    <ul class="menu list-unstyled">
-      <li class="menu-item"><a href="#" class="menu-link">Частным клиентам</a></li>
-      <li class="menu-item"><a href="#" class="menu-link">Корпоративным клиентам</a></li>
-      <li class="menu-item"><a href="#" class="menu-link">Инвесторам и прессе</a></li>
-      <li class="menu-item"><a href="#" class="menu-link">Интернет-магазин</a></li>
-    </ul>
+<nav class="top-bar">
+    <div class="top-bar__inner container">
+        <div class="choose-sites dropdown">
+            <div class="choose-sites__label dropdown-toggle dropdown-toggle__arrow">Все сайты</div>
 
-    <div class="select-region dropdown top-bar__geo">
-      <div class="select-region__current dropdown-toggle dropdown-toggle__arrow">Московский регион</div>
+            <ul class="choose-sites__menu dropdown-menu list-unstyled">
+                <li class="choose-sites__item dropdown-item"><a href="#" class="choose-sites__link">Частным клиентам</a></li>
+                <li class="choose-sites__item dropdown-item"><a href="#" class="choose-sites__link">Корпоративным клиентам</a></li>
+                <li class="choose-sites__item dropdown-item"><a href="#" class="choose-sites__link">Инвесторам и прессе</a></li>
+                <li class="choose-sites__item dropdown-item"><a href="#" class="choose-sites__link">Интернет-магазин</a>
+                </li>
+            </ul>
+        </div>
 
-      <ul class="select-region__list dropdown-menu list-unstyled">
-        <li class="select-region__item">Санкт-Петербург и область</li>
-        <li class="select-region__item">Другие регионы</li>
-      </ul>
+        <div class="select-region dropdown">
+            <div class="dropdown-toggle dropdown-toggle__arrow">Московский регион</div>
+
+            <ul class="select-region__list dropdown-menu list-unstyled">
+                <li class="select-region__item dropdown-item">Ленинградский район</li>
+                <li class="select-region__item dropdown-item">Калининградская область</li>
+            </ul>
+        </div>
     </div>
-  </div>
-</div>
+</nav>
 
 <header class="header container">
-    <a href="#" class="header-logo"><img src="img/logo.svg" alt="logo"></a>
+    <a href="#" class="header-logo">
+        <picture>
+            <source srcset="img/logo-icon.svg" media="(max-width: 767px)">
+            <img src="img/logo.svg" alt="logo">
+        </picture>
+    </a>
+
+    <div class="header-bar">
+        <a href="#" class="header-bar__point">
+            <svg class="header-bar__search">
+                <use xlink:href="img/icons.svg#search"></use>
+            </svg>
+        </a>
+        <a href="#" class="header-bar__point">
+            <svg class="header-bar__account">
+                <use xlink:href="img/icons.svg#account"></use>
+            </svg>
+        </a>
+        <a href="#" class="header-bar__point">
+            <svg class="header-bar__hamburger">
+                <use xlink:href="img/icons.svg#hamburger"></use>
+            </svg>
+        </a>
+    </div>
 </header>
