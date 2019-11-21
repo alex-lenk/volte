@@ -1,28 +1,3 @@
-.select-region {
-  position: relative;
-}
-
-.select-region__current {
-  cursor: pointer;
-
-  &::after {
-    margin-left: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    border: 8px solid transparent;
-    border-top-color: #fff;
-    content: '';
-  }
-}
-
-.select-region__list {
-  padding: 15px;
-  top: 100%;
-  position: absolute;
-  background-color: #333;
-  display: none;
-}
-
 .select-region__item {
   line-height: 2rem;
   white-space: nowrap;

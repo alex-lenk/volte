@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "general/common";
+@import "components/dropdown";
 @import "components/top-bar";
 @import "components/select-region";
 @import "components/header";
@@ -7,30 +8,6 @@
 @import "components/presentation";
 @import "components/advantages";
 @import "components/tab";
-
-/*
-.dropbtn {
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  overflow: auto;
-  z-index: 1;
-}
-
-.show {
-  display: block;
-}
-*/
-
 
 ////////////////////////
 

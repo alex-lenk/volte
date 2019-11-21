@@ -1,0 +1,24 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-toggle__arrow::after {
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  content: '';
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  padding: 15px;
+  top: 100%;
+  background-color: #333;
+}
