@@ -80,4 +80,59 @@
     </aside>
 </section>
 
+<div class="block-bg__gray">
+    <div class="tariffs container">
+        <h2 class="header header_color_black header_level_h2 tariffs-showcase__title"><span>Выберите тариф</span></h2>
+        <p class="tariffs-showcase__description">
+            Выбирайте тарифы «Включайся!» и используйте возможности VoLTE по максимуму.
+            VoLTE не расходует интернет-трафик вашего тарифа, а звонки по VoLTE уже входят в пакет минут.
+        </p>
+
+        <div class="buttons">
+            <div class="button" data-value="1">Смартфон</div>
+            <div class="button" data-value="2">Планшет</div>
+            <div class="button" data-value="3">Модем</div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab tab--1 active">
+                <div class="wrapper">
+                    <div class="tariffs-card">
+                        <div class="tariffs-card__title">
+                            <a href="#" class="tariffs-card__title-link">Включайся! Смотри</a>
+                        </div>
+
+                        <ul class="tariffs-card__params list-unstyled">
+                            <li class="tariffs-card__params-item">700 минут</li>
+                        </ul>
+
+                        <div class="tariffs-card__additional-text">Безлимитный интернет</div>
+
+                        <div class="tariffs-card__additional">
+                            <svg class="tariffs-card__icon">
+                                <use xlink:href="img/icons.svg#infinity"></use>
+                            </svg>
+                        </div>
+
+                        <div class="tariffs-card__price">1000 ₽</div>
+
+                        <div class="tariffs-card__period">в месяц</div>
+
+                        <a class="tariffs-card__btn btn btn-primary" href="#">Подробнее</a>
+
+                        <div class="tariffs-card__bottom">
+                            <a href="#" class="tariffs-card__go">Перейти в МегаФон</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="tab tab--2">Второй контент</div>
+            <div class="tab tab--3">Третий контент</div>
+        </div>
+    </div>
+</div>
+
+
 <%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,11 +1,57 @@
+$font-stack: Graphik, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
 $green: #00b956;
+
+@font-face {
+  font-family: Graphik;
+  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Light-Web.woff2") format("woff2"),
+  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Light-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 300
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Regular-Web.woff2") format("woff2"),
+  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Regular-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 400
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Medium-Web.woff2") format("woff2"),
+  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Medium-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 500
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Semibold-Web.woff2") format("woff2"),
+  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Semibold-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 600
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Bold-Web.woff2") format("woff2"),
+  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Bold-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 700
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Black-Web.woff2") format("woff2"),
+  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Black-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 900
+}
 
 body {
   color: #333;
-
-  #logo {
-    width: 10rem;
-  }
+  font-family: $font-stack;
 }
 
 a:hover {
@@ -29,4 +75,41 @@ img {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+
+.block-bg__gray {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #ebedef;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  vertical-align: top;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn-primary {
+  padding: 13px 60px;
+  background-color: $green;
+  transition: opacity .4s;
+
+  &:hover {
+    color: #fff;
+    opacity: .85;
+  }
 }
