@@ -71,6 +71,18 @@ img {
   margin-right: auto;
 }
 
+.arrow-link::after {
+  width: 5px;
+  height: 5px;
+  margin-left: 7px;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  display: inline-flex;
+  vertical-align: middle;
+  transform: rotate(135deg);
+  content: '';
+}
+
 .list-unstyled {
   padding-left: 0;
   margin-bottom: 0;
