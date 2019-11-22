@@ -3,48 +3,48 @@ $green: #00b956;
 
 @font-face {
   font-family: Graphik;
-  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Light-Web.woff2") format("woff2"),
-  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Light-Web.woff") format("woff");
+  src: url("../fonts/MegaFonGraphikLC-Light-Web.woff2") format("woff2"),
+  url("../fonts/MegaFonGraphikLC-Light-Web.woff") format("woff");
   font-style: normal;
   font-weight: 300
 }
 
 @font-face {
   font-family: Graphik;
-  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Regular-Web.woff2") format("woff2"),
-  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Regular-Web.woff") format("woff");
+  src: url("../fonts/MegaFonGraphikLC-Regular-Web.woff2") format("woff2"),
+  url("../fonts/MegaFonGraphikLC-Regular-Web.woff") format("woff");
   font-style: normal;
   font-weight: 400
 }
 
 @font-face {
   font-family: Graphik;
-  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Medium-Web.woff2") format("woff2"),
-  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Medium-Web.woff") format("woff");
+  src: url("../fonts/MegaFonGraphikLC-Medium-Web.woff2") format("woff2"),
+  url("../fonts/MegaFonGraphikLC-Medium-Web.woff") format("woff");
   font-style: normal;
   font-weight: 500
 }
 
 @font-face {
   font-family: Graphik;
-  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Semibold-Web.woff2") format("woff2"),
-  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Semibold-Web.woff") format("woff");
+  src: url("../fonts/MegaFonGraphikLC-Semibold-Web.woff2") format("woff2"),
+  url("../fonts/MegaFonGraphikLC-Semibold-Web.woff") format("woff");
   font-style: normal;
   font-weight: 600
 }
 
 @font-face {
   font-family: Graphik;
-  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Bold-Web.woff2") format("woff2"),
-  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Bold-Web.woff") format("woff");
+  src: url("../fonts/MegaFonGraphikLC-Bold-Web.woff2") format("woff2"),
+  url("../fonts/MegaFonGraphikLC-Bold-Web.woff") format("woff");
   font-style: normal;
   font-weight: 700
 }
 
 @font-face {
   font-family: Graphik;
-  src: url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Black-Web.woff2") format("woff2"),
-  url("//static1.megafon.ru/.blocks/fonts/graphik/MegaFonGraphikLC-Black-Web.woff") format("woff");
+  src: url("../fonts/MegaFonGraphikLC-Black-Web.woff2") format("woff2"),
+  url("../fonts/MegaFonGraphikLC-Black-Web.woff") format("woff");
   font-style: normal;
   font-weight: 900
 }
@@ -78,8 +78,8 @@ img {
 }
 
 .block-bg__gray {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: #ebedef;
 }
 
@@ -104,7 +104,7 @@ img {
 }
 
 .btn-primary {
-  padding: 13px 60px;
+  padding: 12px 58px;
   background-color: $green;
   transition: opacity .4s;
 
