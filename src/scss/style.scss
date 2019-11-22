@@ -1,4 +1,6 @@
 @import "~bootstrap/scss/bootstrap-reboot";
+@import "general/variable";
+@import "general/fonts";
 @import "general/common";
 @import "components/dropdown";
 @import "components/top-bar";
@@ -9,83 +11,4 @@
 @import "components/advantages";
 @import "components/tab";
 @import "components/tariffs";
-
-.facilities {
-  padding: 40px 20px;
-  background-color: #ffffff;
-  display: flex;
-}
-
-.facilities-content {
-  max-width: 50%;
-  flex-basis: 50%;
-}
-
-.facilities-content__block {
-  max-width: 360px;
-}
-
-.facilities-content__text {
-  font-size: 15px;
-}
-
-.facilities-title {
-  font-size: 32px;
-}
-
-.facilities-info {
-  max-width: 50%;
-  flex-basis: 50%;
-}
-
-.facilities-info__box {
-}
-
-.facilities-info__title {
-}
-
-.facilities-info__text {
-}
-
-.facilities-info__more {
-}
-
-////////////////////////////
-
-.facilities-info__device {
-  display: flex;
-}
-
-.device-box {
-  padding: 20px 24px;
-  color: #333;
-  max-width: 50%;
-  flex-basis: 50%;
-  border: 1px solid #EBEDEF;
-}
-
-.device-box__media {
-}
-
-.device-box__stick {
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  width: 56px;
-  height: 56px;
-  margin-left: 10px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: $green;
-}
-
-.device-box__media-img {
-}
-
-.device-box__title {
-}
+@import "components/facilities";

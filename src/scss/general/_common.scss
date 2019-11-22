@@ -1,61 +1,10 @@
-$font-stack: Graphik, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-$green: #00b956;
-
-@font-face {
-  font-family: Graphik;
-  src: url("../fonts/MegaFonGraphikLC-Light-Web.woff2") format("woff2"),
-  url("../fonts/MegaFonGraphikLC-Light-Web.woff") format("woff");
-  font-style: normal;
-  font-weight: 300
-}
-
-@font-face {
-  font-family: Graphik;
-  src: url("../fonts/MegaFonGraphikLC-Regular-Web.woff2") format("woff2"),
-  url("../fonts/MegaFonGraphikLC-Regular-Web.woff") format("woff");
-  font-style: normal;
-  font-weight: 400
-}
-
-@font-face {
-  font-family: Graphik;
-  src: url("../fonts/MegaFonGraphikLC-Medium-Web.woff2") format("woff2"),
-  url("../fonts/MegaFonGraphikLC-Medium-Web.woff") format("woff");
-  font-style: normal;
-  font-weight: 500
-}
-
-@font-face {
-  font-family: Graphik;
-  src: url("../fonts/MegaFonGraphikLC-Semibold-Web.woff2") format("woff2"),
-  url("../fonts/MegaFonGraphikLC-Semibold-Web.woff") format("woff");
-  font-style: normal;
-  font-weight: 600
-}
-
-@font-face {
-  font-family: Graphik;
-  src: url("../fonts/MegaFonGraphikLC-Bold-Web.woff2") format("woff2"),
-  url("../fonts/MegaFonGraphikLC-Bold-Web.woff") format("woff");
-  font-style: normal;
-  font-weight: 700
-}
-
-@font-face {
-  font-family: Graphik;
-  src: url("../fonts/MegaFonGraphikLC-Black-Web.woff2") format("woff2"),
-  url("../fonts/MegaFonGraphikLC-Black-Web.woff") format("woff");
-  font-style: normal;
-  font-weight: 900
-}
-
 body {
-  color: #333;
+  color: $black;
   font-family: $font-stack;
 }
 
-a:hover {
-  text-decoration: none;
+a {
+  color: $blue;
 }
 
 img {
@@ -64,17 +13,17 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1152px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .arrow-link::after {
-  width: 5px;
-  height: 5px;
-  margin-left: 7px;
+  width: 6px;
+  height: 6px;
+  margin-left: 11px;
   border-left: 1px solid;
   border-top: 1px solid;
   display: inline-flex;
@@ -92,7 +41,7 @@ img {
 .block-bg__gray {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #ebedef;
+  background-color: $grey;
 }
 
 .btn {
@@ -113,6 +62,10 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .btn-primary {

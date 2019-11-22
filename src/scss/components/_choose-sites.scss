@@ -3,7 +3,8 @@
   transition: color .4s;
 
   &:hover {
-    color: #ccc;
+    color: $grey;
+    text-decoration: none;
   }
 }
 

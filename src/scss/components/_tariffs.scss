@@ -24,7 +24,7 @@
   background-color: #fff;
 
   &:not(:last-of-type) {
-    border-right: 1px solid #ebedef;
+    border-right: 1px solid $grey;
   }
 }
 
@@ -62,7 +62,7 @@
     height: 16px;
     width: 1px;
     margin-left: 5px;
-    background-color: #333;
+    background-color: $black;
     display: inline-block;
     vertical-align: middle;
     content: "";
@@ -103,5 +103,5 @@
 .tariffs-card__go {
   font-size: 12px;
   display: inline-block;
-  color: #333;
+  color: $black;
 }
