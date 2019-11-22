@@ -1,10 +1,6 @@
-//import svgxuse from 'vendor/svgxuse.min';
-//import tab from 'components/tab';
-
-
-/* BEGIN TABs https://codepen.io/kris-iris/pen/ZqBEPv?editors=1010 */
-/*const TabItemSelector = '.pageNav__tabItem';
-const ContentItemSelector = '.pageNav__contentItem';
+/* BEGIN TABs */
+const TabItemSelector = '.nav-tabs-item';
+const ContentItemSelector = '.tab-content-pane';
 
 class TabsManager {
     constructor(navNode) {
@@ -40,8 +36,8 @@ class TabsManager {
     }
 }
 
-const ActiveTabHeaderClass = 'pageNav__tabItem--active';
-const ActiveTabContentClass = 'pageNav__contentItem--active';
+const ActiveTabHeaderClass = 'nav-tabs-item__active';
+const ActiveTabContentClass = 'tab-content-pane__active';
 
 class TabItem {
     constructor(header, content) {
@@ -61,7 +57,7 @@ class TabItem {
 
 document.addEventListener('DOMContentLoaded', () => {
     let tabs = new TabsManager(document.querySelector('.tabs'));
-});*/
+});
 /* END TABs  */
 
 

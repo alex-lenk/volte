@@ -4,11 +4,12 @@
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
+
 <section class="presentation">
   <picture>
-    <source srcset="/img/presentation-640.jpg" media="(max-width: 640px)">
-    <source srcset="/img/presentation-1280.jpg" media="(max-width: 1280px)">
-    <img src="/img/presentation-2560.jpg" alt="">
+    <source srcset="img/presentation-640.jpg" media="(max-width: 640px)">
+    <source srcset="img/presentation-1280.jpg" media="(max-width: 1280px)">
+    <img src="img/presentation-2560.jpg" alt="">
   </picture>
   <div class="presentation-inner">
     <div class="presentation-container container">
@@ -80,129 +81,157 @@
     </aside>
 </section>
 
+
 <div class="block-bg__gray">
     <div class="tariffs container">
-        <h2 class="header header_color_black header_level_h2 tariffs-showcase__title"><span>Выберите тариф</span></h2>
-        <p class="tariffs-showcase__description">
-            Выбирайте тарифы «Включайся!» и используйте возможности VoLTE по максимуму.
-            VoLTE не расходует интернет-трафик вашего тарифа, а звонки по VoLTE уже входят в пакет минут.
-        </p>
+        <div class="tariffs-showcase">
+            <h2 class="tariffs-showcase__title">Выберите тариф</h2>
 
-        <div class="buttons">
-            <div class="button" data-value="1">Смартфон</div>
-            <div class="button" data-value="2">Планшет</div>
-            <div class="button" data-value="3">Модем</div>
+            <div class="tariffs-showcase__description">
+                Выбирайте тарифы «Включайся!» и используйте возможности VoLTE по максимуму.
+                VoLTE не расходует интернет-трафик вашего тарифа, а звонки по VoLTE уже входят в пакет минут.
+            </div>
         </div>
 
         <div class="tabs">
-            <div class="tab tab--1 active">
-                <div class="wrapper">
-                    <div class="tariffs-card">
-                        <div class="tariffs-card__title">
-                            <a href="#" class="tariffs-card__title-link">Включайся! Смотри</a>
-                        </div>
-
-                        <ul class="tariffs-card__params list-unstyled">
-                            <li class="tariffs-card__params-item">700 минут</li>
-                        </ul>
-
-                        <div class="tariffs-card__additional-text">Безлимитный интернет</div>
-
-                        <div class="tariffs-card__additional">
-                            <svg class="tariffs-card__icon">
-                                <use xlink:href="img/icons.svg#infinity"></use>
-                            </svg>
-                        </div>
-
-                        <div class="tariffs-card__price">1000 ₽</div>
-
-                        <div class="tariffs-card__period">в месяц</div>
-
-                        <a class="tariffs-card__btn btn btn-primary" href="#">Подробнее</a>
-
-                        <div class="tariffs-card__bottom">
-                            <a href="#" class="tariffs-card__go">Перейти в МегаФон</a>
-                        </div>
-                    </div>
-
-
-                </div>
+            <div class="nav-tabs">
+                <div class="nav-tabs-item nav-tabs-item__active" data-value="1">Смартфон</div>
+                <div class="nav-tabs-item" data-value="2">Планшет</div>
+                <div class="nav-tabs-item" data-value="3">Модем</div>
             </div>
-            <div class="tab tab--2">Второй контент</div>
-            <div class="tab tab--3">Третий контент</div>
-        </div>
-    </div>
 
-
-
-    <div class="content-area__inner content-area__inner_color_white content-area__inner_inner-padding">
-        <div class="equipment__head">
-            <div class="equipment__description">
-                <h2 class="header header_color_black header_level_h2 equipment__title">
-                    <span>Что нужно, чтобы пользоваться VoLTE</span>
-                </h2>
-                <p class="equipment__head-text">Технология уже доступна на многих устройствах — проверьте настройки
-                    своего смартфона и тип SIM-карты.</p>
-            </div>
-        </div>
-
-        <div class="equipment__container">
-            <div class="equipment__content">
-                <div class="equipment__salons">
-                    <h3 class="header header_color_black header_level_h3 equipment__subtitle">
-                        <span>SIM-карта с поддержкой 4G</span>
-                    </h3>
-                    <p class="equipment__salons-text">
-                        Наберите команду *507#, чтобы проверить, подходит ли ваша SIM-карта для сети 4G.
-                        Если не подходит — замените её бесплатно на новую SIM-карту в любом салоне МегаФона.
-                    </p>
-                    <a class="arrow-link" href="//www.megafon.ru/go/salons_addresses">Адреса салонов
-                        <svg fill="" class="svg-icon arrow-link__svg">
-                            <use xlink:href="/fast-internet/ceph/sprite.svg#icon-system-arrow_right_16"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="equipment__smartphones">
-                    <h3 class="header header_color_black header_level_h3 equipment__subtitle">
-                        <span>Смартфон с поддержкой VoLTE</span>
-                    </h3>
-                    <p class="equipment__smartphones-text">Ваш смартфон должен поддерживать технологию VoLTE
-                        (см. <a href="#">список устройств</a>).
-                        Не забудьте <a href="//moscow.megafon.ru/help/faq/kak-nastroit-volte.html">проверить настройки</a>
-                        и обновить прошивку до последней версии.</p>
-                    <div class="scroll-box">
-                        <div class="scroll-box__container">
-                            <div class="equipment__tiles"><a href="#" class="device-tile equipment__tile">
-                                <div class="device-tile__inner">
-                                    <div class="device-tile__img-wrapper">
-                                        <div class="device-tile__price">76990</div>
-                                        <img class="device-tile__img" src="https://moscow.shop.megafon.ru/images/goods/1090/109094_p_12_w136_h136.png" alt=""></div>
-                                    <div style="overflow: hidden;">
-                                        <span>Смартфон Samsung Galaxy S10+ 8/128GB Перламутр</span>
-                                    </div>
+            <div class="tab-content">
+                <div class="tab-content-pane tab-content-pane__active">
+                    <div class="tariffs-card__wrap">
+                        <div class="tariffs-card__row">
+                            <!-- Begin tariffs-card -->
+                            <div class="tariffs-card">
+                                <div class="tariffs-card__title">
+                                    <a href="#" class="tariffs-card__title-link">Включайся! Слушай
+                                        Акция</a>
                                 </div>
-                            </a>
-                                <a target="_blank" href="https://moscow.shop.megafon.ru/pathfinder.php?id=106337"
-                                   class="device-tile equipment__tile">
-                                    <div class="device-tile__inner">
-                                        <div class="device-tile__img-wrapper">
-                                            <div class="device-tile__price">94990</div>
-                                            <img class="device-tile__img" src="https://moscow.shop.megafon.ru/images/goods/1063/106337_p_12_w136_h136.png" alt=""></div>
-                                        <div>
-                                            <span>Apple iPhone Xs 512GB Space Gray (Серый космос)</span>
-                                        </div>
-                                    </div>
-                                </a>
+
+                                <ul class="tariffs-card__params list-unstyled">
+                                    <li class="tariffs-card__params-item">700 минут</li>
+                                </ul>
+
+                                <div class="tariffs-card__additional-text">Безлимитный интернет на все сервисы</div>
+
+                                <div class="tariffs-card__additional">
+                                    <svg class="tariffs-card__icon">
+                                        <use xlink:href="img/icons.svg#infinity"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="tariffs-card__price">650 ₽</div>
+
+                                <div class="tariffs-card__period">в месяц</div>
+
+                                <div class="tariffs-card__bottom">
+                                    <a class="tariffs-card__more btn btn-primary" href="#">Подробнее</a>
+
+                                    <a href="#" class="tariffs-card__go">Перейти в МегаФон</a>
+                                </div>
                             </div>
+                            <!-- END tariffs-card -->
+
+                            <!-- Begin tariffs-card -->
+                            <div class="tariffs-card">
+                                <div class="tariffs-card__title">
+                                    <a href="#" class="tariffs-card__title-link">Включайся! общайся</a>
+                                </div>
+
+                                <ul class="tariffs-card__params list-unstyled">
+                                    <li class="tariffs-card__params-item">850 минут</li>
+                                </ul>
+
+                                <div class="tariffs-card__additional-text">Безлимитный интернет на все сервисы</div>
+
+                                <div class="tariffs-card__additional">
+                                    <svg class="tariffs-card__icon">
+                                        <use xlink:href="img/icons.svg#infinity"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="tariffs-card__price">800 ₽</div>
+
+                                <div class="tariffs-card__period">в месяц</div>
+
+                                <div class="tariffs-card__bottom">
+                                    <a class="tariffs-card__more btn btn-primary" href="#">Подробнее</a>
+
+                                    <a href="#" class="tariffs-card__go">Перейти в МегаФон</a>
+                                </div>
+                            </div>
+                            <!-- END tariffs-card -->
+
+                            <!-- Begin tariffs-card -->
+                            <div class="tariffs-card">
+                                <div class="tariffs-card__title">
+                                    <a href="#" class="tariffs-card__title-link">Включайся! Смотри
+                                        Акция</a>
+                                </div>
+
+                                <ul class="tariffs-card__params list-unstyled">
+                                    <li class="tariffs-card__params-item">750 минут</li>
+                                    <li class="tariffs-card__params-item">20 ГБ</li>
+                                </ul>
+
+                                <div class="tariffs-card__additional-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+
+                                <div class="tariffs-card__additional">
+                                    <svg class="tariffs-card__icon">
+                                        <use xlink:href="img/icons.svg#infinity"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="tariffs-card__price">1550 ₽</div>
+
+                                <div class="tariffs-card__period">в месяц</div>
+
+                                <div class="tariffs-card__bottom">
+                                    <a class="tariffs-card__more btn btn-primary" href="#">Подробнее</a>
+
+                                    <a href="#" class="tariffs-card__go">Перейти в МегаФон</a>
+                                </div>
+                            </div>
+                            <!-- END tariffs-card -->
+
+                            <!-- Begin tariffs-card -->
+                            <div class="tariffs-card">
+                                <div class="tariffs-card__title">
+                                    <a href="#" class="tariffs-card__title-link">Включайся! Слушай
+                                        Акция</a>
+                                </div>
+
+                                <ul class="tariffs-card__params list-unstyled">
+                                    <li class="tariffs-card__params-item">700 минут</li>
+                                </ul>
+
+                                <div class="tariffs-card__additional-text">Безлимитный интернет на все сервисы</div>
+
+                                <div class="tariffs-card__additional">
+                                    <svg class="tariffs-card__icon">
+                                        <use xlink:href="img/icons.svg#infinity"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="tariffs-card__price">650 ₽</div>
+
+                                <div class="tariffs-card__period">в месяц</div>
+
+                                <div class="tariffs-card__bottom">
+                                    <a class="tariffs-card__more btn btn-primary" href="#">Подробнее</a>
+
+                                    <a href="#" class="tariffs-card__go">Перейти в МегаФон</a>
+                                </div>
+                            </div>
+                            <!-- END tariffs-card -->
                         </div>
                     </div>
-                    <a class="arrow-link" href="#">
-                        <span>Выбрать смартфон с VoLTE</span>
-                        <svg fill="" class="svg-icon arrow-link__svg">
-                            <use xlink:href="/fast-internet/ceph/sprite.svg#icon-system-arrow_right_16"></use>
-                        </svg>
-                    </a>
                 </div>
+                <div class="tab-content-pane">Второй контент</div>
+                <div class="tab-content-pane">Третий контент</div>
             </div>
         </div>
     </div>

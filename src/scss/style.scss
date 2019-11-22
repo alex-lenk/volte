@@ -8,49 +8,11 @@
 @import "components/presentation";
 @import "components/advantages";
 @import "components/tab";
+@import "components/tariffs";
 
 ////////////////////////
 
-.tariffs-card {
-  display: inline-block;
-  padding: 20px;
-  background-color: #fff;
-}
 
-.tariffs-card__title {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
 
-.tariffs-card__title-link {
-  color: inherit;
-}
+//////////
 
-.tariffs-card__params {
-  margin-bottom: 35px;
-  display: flex;
-  line-height: 1;
-}
-
-.tariffs-card__params-item:not(:last-child) {
-  margin-right: 5px;
-
-  &::after {
-    height: 16px;
-    width: 1px;
-    margin-left: 5px;
-    background-color: #333;
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-  }
-}
-
-.tariffs-card__icon {
-  width: 28px;
-  height: 13px;
-}
-
-.tariffs-card__additional {
-  margin-bottom: 60px;
-}

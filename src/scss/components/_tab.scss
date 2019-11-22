@@ -1,11 +1,26 @@
-.active {
+.nav-tabs {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.nav-tabs-item {
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color .4s;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav-tabs-item__active {
   color: $green;
+  border-bottom-color: $green;
 }
 
-.hide {
+.tab-content-pane:not(.tab-content-pane__active) {
   display: none;
-}
-
-.show {
-  display: block;
 }
