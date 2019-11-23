@@ -98,3 +98,25 @@ dropdownItems.forEach((item) => {
 });
 
 /* END dropdown */
+
+
+
+/* BEGIN accordion */
+
+let accordionTitle = document.getElementsByClassName('accordion-title');
+
+for (let i = 0; i < accordionTitle.length; i++) {
+    accordionTitle[i].addEventListener('click', function () {
+        this.classList.toggle('accordion-active');
+
+        let accordionPanelContent = this.nextElementSibling;
+
+        if (accordionPanelContent.style.maxHeight) {
+            accordionPanelContent.style.maxHeight = null;
+        } else {
+            accordionPanelContent.style.maxHeight = accordionPanelContent.scrollHeight + 'px';
+        }
+    });
+}
+
+/* END accordion */

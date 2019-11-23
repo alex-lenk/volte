@@ -71,6 +71,24 @@ img {
   }
 }
 
+.list-dash {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.list-dash__item {
+  position: relative;
+  padding-left: 29px;
+  margin-bottom: 10px;
+
+  &:before {
+    content: "—";
+    position: absolute;
+    left: 0;
+  }
+}
+
 .block-bg__gray {
   padding-top: 75px;
   padding-bottom: 75px;

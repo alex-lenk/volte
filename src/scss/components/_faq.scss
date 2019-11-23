@@ -1,0 +1,45 @@
+.faq {
+  background-color: #fff;
+}
+
+.faq-title {
+  line-height: 1.3;
+}
+
+.faq-container {
+  max-width: 835px;
+}
+
+@media (max-width: 575px) {
+  .faq {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .faq-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq {
+    padding: 56px 16px;
+  }
+  .faq-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .faq-title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq {
+    padding: 80px;
+  }
+  .faq-title {
+    margin-bottom: 84px;
+  }
+}
