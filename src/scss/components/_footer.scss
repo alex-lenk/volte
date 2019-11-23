@@ -1,0 +1,258 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #EBEDEF;
+}
+
+.footer-link {
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.footer-menu__half {
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-list__item {
+    min-width: 103px;
+  }
+}
+
+.footer-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.footer-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.footer-list__item {
+  font-size: 12px;
+  margin-bottom: 13px;
+  color: $grey-2;
+}
+
+.footer-support__item {
+  font-size: 12px;
+}
+
+.footer-support__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-support__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  fill: $black;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.footer-copy {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  color: $grey-2;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 16px;
+    background: #d0d0d0;
+    color: #999;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    border-radius: 50%;
+    content: "6+";
+  }
+}
+
+.footer-social {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-social__link {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  position: relative;
+  background-color: #d5d7d8;
+  text-decoration: none;
+  border-radius: 100%;
+  transition: background-color .4s;
+
+  &:hover .footer-social__icon {
+    fill: #fff;
+  }
+}
+
+.footer-social__link.tw:hover {
+  background-color: #36C6F4;
+}
+
+.footer-social__link.ig:hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.footer-social__link.vk:hover {
+  background-color: #5081A7;
+}
+
+.footer-social__link.fb:hover {
+  background-color: #26609E;
+}
+
+.footer-social__link.yt:hover {
+  background-color: #ff0000;
+}
+
+.footer-social__link.h:hover {
+  background: $black;
+}
+
+.footer-social__link.tg:hover {
+  background: #2ca5e0;
+}
+
+.footer-social__icon {
+  width: 21px;
+  height: 21px;
+  margin: auto;
+  fill: #666;
+  transition: fill .4s;
+}
+
+@media (min-width: 576px) {
+  .footer-inner {
+    display: flex;
+  }
+  .footer-social {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  .footer-social__item:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-inner {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 993px) {
+  .footer-menu {
+    margin-right: 60px;
+    flex-shrink: 0;
+  }
+  .footer-menu__half {
+    max-width: 300px;
+  }
+  .footer-special__block {
+    margin-right: auto;
+    flex-shrink: 0;
+  }
+  .footer-support {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer-support__item {
+    width: 41%;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-menu__half .footer-list__item:nth-child(4) {
+    order: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-inner {
+    margin-bottom: 20px;
+  }
+  .footer-block {
+    margin-bottom: 30px;
+  }
+  .footer-menu__half .footer-list {
+    max-width: 300px;
+  }
+  .footer-social {
+    flex-wrap: wrap;
+  }
+  .footer-social__item:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-copy {
+    order: 1;
+  }
+  .footer-social {
+    margin-bottom: 13px;
+    justify-content: center;
+  }
+  .footer-social__item {
+    margin-right: 11px;
+    margin-left: 11px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer-block {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1099px) {
+  .footer-menu {
+    margin-right: 30px;
+  }
+  .footer-support__item {
+    width: 47%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+  .footer-block {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .footer-social {
+    max-width: 50%;
+    flex-shrink: 0;
+  }
+}

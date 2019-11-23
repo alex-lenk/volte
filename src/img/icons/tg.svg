@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 21 21" style="enable-background:new 0 0 21 21;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#535353;}
+</style>
+    <title></title>
     <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Footer/1280" transform="translate(-1212.000000, -251.000000)" fill="#535353">
-            <g id="Group-6" transform="translate(1202.000000, 240.000000)">
-                <path d="M17.0519825,20.9629306 L24.7271417,14.0366858 C25.0640018,13.7377188 24.653579,13.59193 24.2063955,13.8631038 L14.7337302,19.8392985 L10.6420541,18.5622205 C9.75843252,18.2916675 9.75208734,17.6844751 10.8404376,17.2479405 L26.7847735,11.0998741 C27.5129933,10.7692626 28.2158601,11.2747804 27.9378584,12.3893527 L25.2225348,25.1849616 C25.0329242,26.0942398 24.4835281,26.3117002 23.7223133,25.8916906 L19.5860214,22.8357441 L17.5978345,24.7690075 C17.3668561,24.9935717 17.1840183,25.1828236 16.7702022,25.1828236 L17.051873,20.9628645 Z" id="Combined-Shape"></path>
-            </g>
-        </g>
-    </g>
+    <g id="Symbols">
+	<g id="Footer_x2F_1280" transform="translate(-1212.000000, -251.000000)">
+		<g id="Group-6" transform="translate(1202.000000, 240.000000)">
+			<path id="Combined-Shape" class="st0" d="M18.8,23.6l7.3-6.6c0.3-0.3-0.1-0.4-0.5-0.2l-9.1,5.7l-3.9-1.2
+				c-0.8-0.3-0.9-0.8,0.2-1.3l15.3-5.9c0.7-0.3,1.4,0.2,1.1,1.2l-2.6,12.2c-0.2,0.9-0.7,1.1-1.4,0.7l-4-2.9l-1.9,1.9
+				c-0.2,0.2-0.4,0.4-0.8,0.4L18.8,23.6L18.8,23.6z"/>
+		</g>
+	</g>
+</g>
 </svg>

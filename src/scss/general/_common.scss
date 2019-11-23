@@ -20,6 +20,20 @@ img {
   margin-right: auto;
 }
 
+.container-fluid {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1200px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .arrow-link::after {
   width: 6px;
   height: 6px;
@@ -30,6 +44,10 @@ img {
   vertical-align: middle;
   transform: rotate(135deg);
   content: '';
+}
+
+.text-bold {
+  font-weight: 500;
 }
 
 .list-unstyled {

@@ -11,10 +11,6 @@
 }
 
 @media (max-width: 575px) {
-  .faq {
-    margin-left: -16px;
-    margin-right: -16px;
-  }
   .faq-title {
     font-size: 22px;
   }
@@ -22,7 +18,8 @@
 
 @media (max-width: 767px) {
   .faq {
-    padding: 56px 16px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
   .faq-title {
     margin-bottom: 40px;
@@ -37,7 +34,8 @@
 
 @media (min-width: 768px) {
   .faq {
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .faq-title {
     margin-bottom: 84px;
