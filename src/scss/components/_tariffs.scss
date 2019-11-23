@@ -7,13 +7,7 @@
   font-size: 32px;
 }
 
-.tariffs-card__wrap {
-  max-width: 100%;
-  overflow-x: auto;
-}
-
 .tariffs-card__row {
-  width: 1200px;
   display: flex;
 }
 
@@ -104,4 +98,15 @@
   font-size: 12px;
   display: inline-block;
   color: $black;
+}
+
+@media (max-width: 1023px) {
+  .tariffs-card__wrap {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .tariffs-card__row {
+    width: 1200px;
+  }
 }

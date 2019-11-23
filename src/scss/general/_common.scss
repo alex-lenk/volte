@@ -38,6 +38,39 @@ img {
   list-style: none;
 }
 
+.list-round {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-round__item {
+  padding-left: 40px;
+  position: relative;
+
+  &:not(:last-child) .list-round__content {
+    padding-bottom: 40px;
+    margin-bottom: 35px;
+    display: inline-block;
+    border-bottom: 1px solid $grey;
+  }
+
+  &::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $green;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    content: '';
+  }
+
+  @media (min-width: 1100px) {
+    padding-right: 40px;
+  }
+}
+
 .block-bg__gray {
   padding-top: 75px;
   padding-bottom: 75px;
