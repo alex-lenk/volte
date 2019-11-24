@@ -133,3 +133,17 @@ d.withCredentials&&""!==k&&k!==m?XDomainRequest||void 0:XMLHttpRequest}return d}
     "true"),b.style.position="absolute",b.style.width=0,b.style.height=0,b.style.overflow="hidden",c.insertBefore(b,c.firstChild);d()}}function n(a){return function(){a.onerror=null;a.ontimeout=null;d()}}var a,c,q=0;m();var f=document.getElementsByTagName("use");for(c=0;c<f.length;c+=1){try{var g=f[c].getBoundingClientRect()}catch(w){g=!1}var h=(a=f[c].getAttribute("href")||f[c].getAttributeNS("http://www.w3.org/1999/xlink","href")||f[c].getAttribute("xlink:href"))&&a.split?a.split("#"):["",""];var b=
     h[0];h=h[1];var r=g&&0===g.left&&0===g.right&&0===g.top&&0===g.bottom;g&&0===g.width&&0===g.height&&!r?(f[c].hasAttribute("href")&&f[c].setAttributeNS("http://www.w3.org/1999/xlink","xlink:href",a),b.length&&(a=e[b],!0!==a&&setTimeout(l({useEl:f[c],base:b,hash:h}),0),void 0===a&&(h=u(b),void 0!==h&&(a=new h,e[b]=a,a.onload=p(a),a.onerror=n(a),a.ontimeout=n(a),a.open("GET",b),a.send(),q+=1)))):r?b.length&&e[b]&&setTimeout(l({useEl:f[c],base:b,hash:h}),0):void 0===e[b]?e[b]=!0:e[b].onload&&(e[b].abort(),
     delete e[b].onload,e[b]=!0)}f="";q+=1;d()};var p=function(){window.removeEventListener("load",p,!1);l=setTimeout(n,0)};"complete"!==document.readyState?window.addEventListener("load",p,!1):p()}})();
+
+
+let slideInfoTitle = document.querySelectorAll('.slide-info__header'),
+    slideInfoCurrent = document.getElementsByClassName('slide-info__current');
+
+Array.from(slideInfoTitle).forEach(function (item) {
+    item.addEventListener('click', function (e) {
+        if (slideInfoCurrent.length > 0 && slideInfoCurrent[0] !== this) // если есть активный элемент, и это не тот по которому кликнули
+            slideInfoCurrent[0].classList.remove('slide-info__current'); // убрать класс slide-info__current
+
+        // изменить состояние класса slide-info__current на текущем элементе: добавить если не было, убрать если было.
+        this.classList.toggle('slide-info__current');
+    });
+});
