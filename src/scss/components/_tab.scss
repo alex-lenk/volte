@@ -1,7 +1,3 @@
-.tabs {
-  margin-bottom: 80px;
-}
-
 .nav-tabs {
   margin-bottom: 30px;
   display: flex;
@@ -15,9 +11,6 @@
   border-bottom: 2px solid transparent;
   transition: border-bottom-color .4s;
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
 .nav-tabs-item__active {
@@ -27,4 +20,22 @@
 
 .tab-content-pane:not(.tab-content-pane__active) {
   display: none;
+}
+
+@media (min-width: 576px) {
+  .tabs {
+    margin-bottom: 80px;
+  }
+  .nav-tabs-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tabs {
+    margin-bottom: 58px;
+  }
+  .nav-tabs-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }

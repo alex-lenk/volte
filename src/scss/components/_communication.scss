@@ -23,13 +23,18 @@
 }
 
 .communication-list__title {
-  margin-bottom: 6px;
-  font-size: 20px;
   font-weight: 500;
 }
 
 .communication-list__text {
   font-size: 15px;
+}
+
+@media (min-width: 576px) {
+  .communication-list__title {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 641px) {
@@ -74,6 +79,7 @@
 
 @media (max-width: 640px) {
   .communication {
+    padding-bottom: 20px;
     margin-left: -16px;
     margin-right: -16px;
   }
@@ -84,6 +90,13 @@
   .communication-content {
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .communication-list__title {
+    margin-bottom: 15px;
+    font-size: 18px;
   }
 }
 

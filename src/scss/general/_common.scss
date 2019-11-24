@@ -63,13 +63,32 @@ img {
 }
 
 .list-round__item {
-  padding-left: 40px;
   position: relative;
+  @media (min-width: 576px) {
+    padding-left: 40px;
+    &::before {
+      top: 11px;
+      left: 6px;
+    }
+    &:not(:last-child) .list-round__content {
+      padding-bottom: 40px;
+      margin-bottom: 35px;
+      display: inline-block;
+    }
+  }
+  @media (max-width: 575px) {
+    padding-left: 30px;
+    &::before {
+      top: 9px;
+      left: 1px;
+    }
+    &:not(:last-child) .list-round__content {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+  }
 
   &:not(:last-child) .list-round__content {
-    padding-bottom: 40px;
-    margin-bottom: 35px;
-    display: inline-block;
     border-bottom: 1px solid $grey;
   }
 
@@ -79,8 +98,6 @@ img {
     border-radius: 50%;
     background-color: $green;
     position: absolute;
-    top: 11px;
-    left: 6px;
     content: '';
   }
 
@@ -108,9 +125,15 @@ img {
 }
 
 .block-bg__gray {
-  padding-top: 75px;
-  padding-bottom: 75px;
   background-color: $grey;
+  @media (min-width: 576px) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
 }
 
 .btn {
@@ -138,7 +161,7 @@ img {
 }
 
 .btn-primary {
-  padding: 12px 58px;
+  padding: 12px 30px;
   background-color: $green;
   transition: opacity .4s;
 

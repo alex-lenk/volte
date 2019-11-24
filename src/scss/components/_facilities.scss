@@ -8,24 +8,18 @@
 }
 
 .facilities-title {
-  font-size: 32px;
   line-height: 1.3;
 }
 
 .facilities-info__box:not(:last-of-type) {
-  margin-bottom: 35px;
-  padding-bottom: 43px;
   border-bottom: 1px solid $grey;
 }
 
 .facilities-info__title {
-  margin-bottom: 20px;
-  font-size: 21px;
   font-weight: 600;
 }
 
 .facilities-info__text {
-  margin-bottom: 28px;
   line-height: 1.3;
 }
 
@@ -80,10 +74,23 @@
   .facilities {
     padding: 68px 39px;
   }
-
+  .facilities-title {
+    font-size: 32px;
+  }
+  .facilities-info__title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
   .facilities-device-box {
     max-width: 50%;
     flex-basis: 50%;
+  }
+  .facilities-info__text {
+    margin-bottom: 28px;
+  }
+  .facilities-info__box:not(:last-of-type) {
+    margin-bottom: 35px;
+    padding-bottom: 43px;
   }
 }
 
@@ -93,7 +100,14 @@
     margin-right: -16px;
     padding: 32px 16px;
   }
-
+  .facilities-title {
+    margin-bottom: 26px;
+    font-size: 22px;
+  }
+  .facilities-info__title {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
   .facilities-info__device {
     margin-right: -16px;
     overflow-x: scroll;
@@ -103,11 +117,18 @@
     flex-basis: 252px;
     flex-shrink: 0;
   }
+  .facilities-info__box:not(:last-of-type) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  .facilities-info__text {
+    margin-bottom: 17px;
+  }
 }
 
 @media (max-width: 1023px) {
   .facilities-content__block {
-    margin-bottom: 50px;
+    margin-bottom: 26px;
   }
 }
 
