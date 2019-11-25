@@ -25,6 +25,11 @@
   color: inherit;
   display: block;
   max-width: 210px;
+  transition: color .4s;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 .tariffs-card__params {
@@ -84,6 +89,11 @@
   font-size: 12px;
   display: inline-block;
   color: $black;
+  transition: color .4s;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 @media (min-width: 576px) {

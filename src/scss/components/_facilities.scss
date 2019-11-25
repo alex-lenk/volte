@@ -26,6 +26,11 @@
 .facilities-info__more {
   font-size: 12px;
   color: inherit;
+  transition: color .4s;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 .facilities-info__device {
@@ -68,6 +73,11 @@
   min-height: 42px;
   font-size: 14px;
   text-align: left;
+  transition: color .4s;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 @media (min-width: 576px) {
