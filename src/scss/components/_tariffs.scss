@@ -35,6 +35,27 @@
   font-size: 15px;
 }
 
+.tariffs-card__additional {
+  display: flex;
+  align-items: center;
+
+  .footer-social__link {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (min-width: 576px) {
+    .footer-social__item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.tariffs-card__additional-more {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
 .tariffs-card__additional-text {
   max-width: 178px;
   margin-bottom: 15px;
