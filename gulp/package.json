@@ -12,9 +12,9 @@
     "lint": "eslint --config config/eslint.config.js --fix src/scripts/*.js "
   },
   "dependencies": {
-    "gulp": "4.0.2",
-    "gulp-path": "^3.*",
-    "gulp-svgmin": "^1.*",
-    "gulp-svgstore": "^6.*"
+    "gulp": "latest",
+    "gulp-path": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-svgstore": "latest"
   }
 }
