@@ -1,8 +1,12 @@
 {
-  "name": "static-site-webpack-habr",
-  "version": "2.0.0",
+  "name": "volte",
+  "version": "2.0.1",
   "description": "HTML template",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-lenk/volte"
+  },
   "scripts": {
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
@@ -11,9 +15,7 @@
   },
   "dependencies": {
     "babel-core": "latest",
-    "bootstrap": "latest",
-    "jquery": "latest",
-    "popper.js": "latest"
+    "bootstrap": "latest"
   },
   "devDependencies": {
     "@babel/core": "latest",
